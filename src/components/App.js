@@ -1,14 +1,14 @@
 import React from 'react';
 import HomePage from './home/HomePage';
+import Header from './common/Header';
 
 
 class App extends React.Component {
 	render(){
 		return(
 			<div>
-				<p>Aqui va el header</p>
+				<Header />
 				{this.props.children}
-				<HomePage />
 			</div>
 			);
 	}
