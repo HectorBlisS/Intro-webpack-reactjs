@@ -1,9 +1,11 @@
+var webpack = require('webpack');
+
 module.exports = {
-	entry: ["./src/app.js","./src/util.js"],
+	entry: ["./src/index.js","./src/util.js"],
 	output: {
-		filename: "bundle.js"
+		filename: "docs/bundle.min.js"
 	},
-	watch: true,
+	watch: false,
 	module:{
 		rules: [
 		
@@ -13,5 +15,11 @@ module.exports = {
 				loaders: ['babel-loader']
 			}
 		],	
-	} 
+	},
+	devServer: {
+		contentBase: 'docs'
+	},
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin()
+	]
 }
