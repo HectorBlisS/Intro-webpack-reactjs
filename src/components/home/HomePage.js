@@ -3,7 +3,14 @@ import React from 'react';
 class HomePage extends React.Component {
 	render(){
 		return(
-			<h1>Hola BlisS!</h1>
+			<div className="jumbotron">
+				<h1>Hola BlisS!</h1>
+  				<p>
+  					<a className="btn btn-primary btn-lg" href="#" role="button">
+  						Learn more
+  					</a>
+  				</p>
+			</div>
 			);
 	}
 }
