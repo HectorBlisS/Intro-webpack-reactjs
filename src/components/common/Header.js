@@ -10,6 +10,9 @@ const Header = props=> {
 		  	</Link>  
 		  	<Link to="/about" className="btn btn-default navbar-btn">
 		  		Sobre nosotros
+		  	</Link> 
+		  	<Link to="/asistentes" className="btn btn-default navbar-btn">
+		  		Asistentes
 		  	</Link>   
 		  </div>
 		</nav>

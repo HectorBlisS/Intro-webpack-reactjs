@@ -27,8 +27,8 @@ module.exports = {
 	},
 	devServer: {
 		contentBase: 'docs'
-	},
-	plugins: [
-		new webpack.optimize.UglifyJsPlugin()
-	]
+	}
+	// plugins: [
+	// 	new webpack.optimize.UglifyJsPlugin()
+	// ]
 }
